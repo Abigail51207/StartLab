@@ -13,13 +13,28 @@ def sum_evens(numList):
         500.0
     """
     # --- YOU CODE STARTS HERE
-    pass
-
-
-
+    sum = 0
+    for num in numList:
+        if num % 2 == 0:
+            sum += num  
+    return float(sum)
 
 
 if __name__ == "__main__":
     import doctest
     ## Uncomment the line below if you want to start testing using the examples in the docstring
     #doctest.testmod() 
+    output = sum_evens([1,5,-3,5.5,359,8,14,-25,1000])
+    print(output)
+    output = sum_evens([14,5,-3,5,9.0,8,14,7,-846])
+    print(output)
+    output = sum_evens([-8.0,-4,1,2,3,4,5,6,12])
+    print(output)
+    output = sum_evens([1,5,-3,5,45.5,8.5,-5,500,6.7,-25])
+    print(output)
+    output = sum_evens([24, 3, 2])
+    print(output)
+    output = sum_evens([1, 3, 5])
+    print(output)
+    output = sum_evens([-2, -4, -6, 22.5, 2.2])
+    print(output)
